@@ -1,0 +1,204 @@
+-- phpMyAdmin SQL Dump
+-- version 4.4.1.1
+-- http://www.phpmyadmin.net
+--
+-- Värd: localhost
+-- Tid vid skapande: 21 apr 2015 kl 14:57
+-- Serverversion: 5.5.42
+-- PHP-version: 5.6.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Databas: `coffeetime`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `kund`
+--
+
+CREATE TABLE `kund` (
+  `KundID` int(10) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Losenord` varchar(20) NOT NULL,
+  `Fnamn` varchar(255) NOT NULL,
+  `Enamn` varchar(255) NOT NULL,
+  `Telefon` varchar(255) NOT NULL,
+  `Adress` varchar(255) NOT NULL,
+  `Postnummer` varchar(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `kund`
+--
+
+INSERT INTO `kund` (`KundID`, `Email`, `Losenord`, `Fnamn`, `Enamn`, `Telefon`, `Adress`, `Postnummer`) VALUES
+(2, 'petter@hotmail.com', 'hejhej', 'Petter', 'Romhagen', '123456', 'Grusvägen 10', '57 003');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `orderdetaljer`
+--
+
+CREATE TABLE `orderdetaljer` (
+  `OrderID` int(10) NOT NULL,
+  `ProduktID` int(10) NOT NULL,
+  `Antal` int(10) NOT NULL,
+  `Pris` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `orderdetaljer`
+--
+
+INSERT INTO `orderdetaljer` (`OrderID`, `ProduktID`, `Antal`, `Pris`) VALUES
+(1, 1, 1, '2500.00');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `orders`
+--
+
+CREATE TABLE `orders` (
+  `OrderID` int(10) NOT NULL,
+  `KundID` int(10) NOT NULL,
+  `Datum` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `orders`
+--
+
+INSERT INTO `orders` (`OrderID`, `KundID`, `Datum`) VALUES
+(1, 2, '2015-04-21 11:39:46');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `postadress`
+--
+
+CREATE TABLE `postadress` (
+  `Postnummer` varchar(10) NOT NULL,
+  `Ort` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `postadress`
+--
+
+INSERT INTO `postadress` (`Postnummer`, `Ort`) VALUES
+('57 003', 'Vrigstad');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `produkt`
+--
+
+CREATE TABLE `produkt` (
+  `ProduktID` int(10) NOT NULL,
+  `ProduktNamn` varchar(255) NOT NULL,
+  `Beskrivning` text NOT NULL,
+  `Pris` decimal(10,2) NOT NULL,
+  `imgUrl` varchar(255) NOT NULL,
+  `Lagerstatus` varchar(255) NOT NULL,
+  `Kategori` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `produkt`
+--
+
+INSERT INTO `produkt` (`ProduktID`, `ProduktNamn`, `Beskrivning`, `Pris`, `imgUrl`, `Lagerstatus`, `Kategori`) VALUES
+(1, 'Moccamaster', 'En kaffekokare som är bra', '2500.00', 'img/moccamaster.png', '1', 'Kaffekokare');
+
+--
+-- Index för dumpade tabeller
+--
+
+--
+-- Index för tabell `kund`
+--
+ALTER TABLE `kund`
+  ADD PRIMARY KEY (`KundID`),
+  ADD KEY `Postnummer` (`Postnummer`);
+
+--
+-- Index för tabell `orderdetaljer`
+--
+ALTER TABLE `orderdetaljer`
+  ADD KEY `OrderID` (`OrderID`),
+  ADD KEY `ProduktID` (`ProduktID`),
+  ADD KEY `OrderID_2` (`OrderID`),
+  ADD KEY `OrderID_3` (`OrderID`),
+  ADD KEY `OrderID_4` (`OrderID`),
+  ADD KEY `OrderID_5` (`OrderID`);
+
+--
+-- Index för tabell `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`OrderID`),
+  ADD KEY `KundID` (`KundID`),
+  ADD KEY `OrderID` (`OrderID`);
+
+--
+-- Index för tabell `postadress`
+--
+ALTER TABLE `postadress`
+  ADD PRIMARY KEY (`Postnummer`),
+  ADD KEY `Postnummer` (`Postnummer`);
+
+--
+-- Index för tabell `produkt`
+--
+ALTER TABLE `produkt`
+  ADD PRIMARY KEY (`ProduktID`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `kund`
+--
+ALTER TABLE `kund`
+  MODIFY `KundID` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT för tabell `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `OrderID` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT för tabell `produkt`
+--
+ALTER TABLE `produkt`
+  MODIFY `ProduktID` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- Restriktioner för dumpade tabeller
+--
+
+--
+-- Restriktioner för tabell `kund`
+--
+ALTER TABLE `kund`
+  ADD CONSTRAINT `kund_ibfk_1` FOREIGN KEY (`Postnummer`) REFERENCES `postadress` (`Postnummer`);
+
+--
+-- Restriktioner för tabell `orderdetaljer`
+--
+ALTER TABLE `orderdetaljer`
+  ADD CONSTRAINT `orderdetaljer_ibfk_2` FOREIGN KEY (`ProduktID`) REFERENCES `produkt` (`ProduktID`),
+  ADD CONSTRAINT `orderdetaljer_ibfk_3` FOREIGN KEY (`OrderID`) REFERENCES `orders` (`OrderID`);
+
+--
+-- Restriktioner för tabell `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`KundID`) REFERENCES `kund` (`KundID`);

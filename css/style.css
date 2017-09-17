@@ -1,0 +1,1411 @@
+/*RESPONSIVE LAYOUTS*/
+@media(max-width:767px){
+    #footer #paypal {
+        float: none;
+        margin-right: 35%;
+    }
+    
+    #footer {
+        padding-bottom: 20px;
+        margin-top: 100px;
+        min-height: 320px;
+    }
+    
+    #footer #footermenu {
+        margin-top: 50px;
+        margin-bottom: 120px;
+        
+    }
+    
+    #footer .copy {
+        margin-top: 200px;
+/*        padding-bottom: 50px;*/
+    }
+    
+    #footer ul {
+        float: none;
+        margin-left: 20%;
+    }
+    
+    .product {    
+        height: 465px;   
+    }
+    
+    
+
+}
+
+@media(max-width:995px) {
+    .product {    
+        height: 465px;   
+    }
+    body {
+        background-color: red;
+    }
+}
+
+@media(max-width:1200px) {
+    .cart td .price {
+        width: 100px;
+    }
+    
+    body {
+        background-color: red;
+    }
+}
+/*RESPONSIVE LAYOUTS END*/
+
+body {
+	background-color: #F9F9F9;
+	font-family: 'Dosis', sans-serif;
+}
+/*top navigationen (den blå)*/
+#topnav {
+	width: 100%;
+	height: 85px;
+	background-color: #1E3140;
+}
+
+
+/*stylar logo bilden*/
+#topnav img {
+	margin-top: -17px;
+	margin-right: 5px;
+	width: 50px;
+	height: auto;
+}
+
+/*stylar logo texten*/
+#topnav p {
+	font-family: 'Vibur', cursive;
+	color: #ffffff;
+	font-size: 30px;
+	margin-top: 23px;
+}
+
+/*stylar top navigationen*/
+#topnav ul {
+	list-style-type: none;
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-top: 33px;
+}
+
+/*stylar länkarna i top navigationen*/
+#topnav a {
+	color: #DDCDB3;
+}
+
+.navbar-right li a:hover {
+    text-decoration: underline;
+}
+
+/*stylar top navigationen*/
+#topnav ul li {
+	font-weight: 600;
+	float: left;
+	margin-right: 30px;
+	font-size: 14px;
+}
+
+/*tar bort margin på sista i top menyn*/
+#topnav ul li:last-child {
+	margin-right: 0;
+}
+
+.topnav-wrap {
+	width: 630px;
+}
+
+/*kategori navigationen*/
+#bottomnav {
+	width: 100%;
+	height: 30px;
+	background-color: #DDCDB3;
+}
+
+/*stylar kategorinavigationen*/
+#bottomnav ul {
+	margin-top: 5px;
+}
+
+/*stylar länkarna i kategorinavigationen*/
+#bottomnav a {
+	color: #000000;
+}
+
+#bottomnav a:hover {
+    text-decoration: underline;
+}
+
+/*class som centrerar containers*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/*stylar kategorinavigationen*/
+#bottomnav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 114px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+/*tar bort margin right på sista i bottomnaven*/
+#bottomnav ul li:last-child {
+	margin-right: 0;
+}
+
+/*bild eller slider*/
+#screenimg {
+	background-color: gray;
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+
+.slideh1 {
+	color: #ffffff;
+	font-size: 74px;
+	position: absolute;
+	font-weight: 300;
+	margin-top: 160px;
+}
+
+/*stylar helskärmsbilden*/
+.screenimg {
+	width: 100%;
+/*	margin-top: -300px;*/
+} 
+
+/*stylar content sektionen*/
+#content {
+	min-height: 400px;
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+#contentorderhistorik {
+	min-height: 400px;
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+#contentcheckout {
+    	min-height: 400px;
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+#betalsatt {
+    	min-height: 400px;
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+#fraktsatt {
+    	min-height: 400px;
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+
+#content p {
+	margin-top: 15px;
+	line-height: 25px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*footer*/
+#footer {
+	width: 100%;
+	height: 130px;
+	height: 250px;
+	background-color: #1E3140;
+	color: #DDCDB3;
+	margin-top: 50px;
+}
+
+/*sticky footer bootstrap*/
+.footer {
+	bottom: 0;
+	position: relative;
+}
+
+/*stylar footer navigationen*/
+#footer ul {
+	margin-top: 115px;
+}
+
+/*stylar footer navigationen*/
+#footer ul li {
+	float: left;
+	margin-right: 99px;
+	font-size: 14px;
+	list-style-type: none;
+}
+
+/*stylar footer navigationen*/
+#footer ul li:last-child {
+	margin-right: 0;
+}
+
+/*stylar footer navigationen*/
+#footer ul li a {
+	color: #DDCDB3;
+}
+
+/*stylar text i footer*/
+#footer p {
+	text-align: center;
+	margin-top: 80px;
+}
+
+/*paypal diven*/
+#paypal {
+	margin: 0;
+	padding: 0;
+	margin-top: -140px;
+}
+
+/*paypal text*/
+#paypal p {
+	font-size: 15px;
+}
+
+/*paypal bild*/
+#footer img {
+	width: 187px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+/*centrerar text i footer menyn*/
+#footermenu {
+	text-align: center;
+}
+
+/*overlay som täcker över helskärmsbilderna*/
+#overlay {
+	width: 100%;
+	height: 450px;
+/*	background-color: #000000;*/
+	opacity: 0.4;
+	position: absolute;
+}
+
+/*stylar bootstrap formulär*/
+.form-control {
+	border-color: #E5E5E5;
+	height: 40px;
+	border-radius: 4px;
+}
+
+.btn-success {
+	background-color: #00CC7D;
+	border: none;
+	font-weight: 700;
+	width: 100px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.btn-success:hover {
+	opacity: 0.8;
+	background-color: #00CC7D;
+	border: none;
+	font-weight: 700;
+}
+
+.btn-danger {
+	background-color: #E92334;
+	border: none;
+	font-weight: 700;
+	width: 100px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.btn-danger:hover {
+	background-color: #E92334;
+	opacity: 0.8;
+	border: none;
+	font-weight: 700;
+}
+
+
+
+
+/*css för slider på index (responsive slide)*/
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/*css för slider på index (responsive slide)*/
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+/*css för slider på index (responsive slide)*/
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+/*css för slider på index (responsive slide)*/
+.rslides img {
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+/*css för slider på index (responsive slide)*/
+.rslides h1 {
+	font-size: 74px;
+	font-weight: 300;
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: 210px; 
+}
+
+/*stylar login och bli medlem formulär*/
+#loginform {
+	padding: 0;
+}
+
+#loginform h2 {
+	margin-bottom: 20px;
+}
+
+#signupform {
+	padding: 0;
+}
+
+#signupform h2 {
+	margin-bottom: 20px;
+}
+
+/*stylar kundagnknapp*/
+.btn-default {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	font-weight: 700;
+	width: 125px;
+	height: 40px;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: -10px;
+}
+
+.btn-default:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+}
+
+
+.glyphicon-shopping-cart {
+	margin-right: 5px;
+}
+
+
+
+/*STYLAR PRODUKTER*/
+/*bild*/
+.product {
+	border: 1px solid #E5E5E5;
+	background-color: #F2F2F2;
+	margin-right: 55px;
+	padding: 10px;
+	border-radius: 3px; 
+	width: 270px;
+	min-height: 200px;
+    margin-bottom: 20px; 
+}
+
+/*tar bort margin på sista produkten*/
+#products .product:last-child {
+	margin-right: 0px;
+}
+
+/*stylar kategorititeln*/
+#products h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*wrap till produktitel*/
+.titlewrap {
+	height: 60px;
+}
+
+/*fixar knapptext*/
+.product a {
+	padding-top: 9px;
+}
+/*fixa knappstorlek*/
+.product .btn-success {
+	width: 120px;
+}
+
+/*bild storlek*/
+.productimg {
+	width: 100%;
+	height: auto;
+}
+
+/*croppar bild om den är för stor*/
+.crop {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+/*pris*/
+#content p.price {
+	color: #E92334;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+/*Lagerstatus*/
+#content .product h6 {
+	font-weight: 700;
+}
+
+.Ja {
+	width: 10px;
+	height: 10px;
+	background-color: #00CC7D;
+	float: left;
+	margin-right: 5px;
+	margin-top: 12px;
+}
+
+.Nej {
+	width: 10px;
+	height: 10px;
+	background-color: #E92334;
+	float: left;
+	margin-right: 5px;
+	margin-top: 12px;
+}
+
+/*STYLAR PRODUKTER ---- SLUT*/
+
+
+
+
+
+/*STYLAR PRODUKT DETAILS*/
+
+.detailproduct {
+	border: 1px solid #E5E5E5;
+	background-color: #F2F2F2;
+	padding: 10px;
+	border-radius: 3px; 
+	margin-top: -50px;
+	min-height: 200px;
+}
+
+/*croppar bild om den är för stor*/
+.detailcrop {
+	width: 47%;
+	height: 450px;
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-right: 20px;
+}
+
+.detailinfo {
+	float: left;
+	width: 50%;
+}
+
+.detailtitle {
+	font-size: 25px;
+	width: 100%;
+}
+
+.detailstatus {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.detailJa {
+	width: 10px;
+	height: 10px;
+	background-color: #00CC7D;
+	float: left;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+.detailNej {
+	width: 10px;
+	height: 10px;
+	background-color: #E92334;
+	float: left;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+
+#content p.detailprice {
+	color: #E92334;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.detaildesc {
+	margin-bottom: 20px;
+}
+
+
+.detailbtn {
+	width: 100%;
+	height: 50px;
+	padding-top: 15px;
+}
+
+
+/*KUNDVAGN STYLING*/
+
+.cart {
+	width: 100%;
+	font-size: 17px;
+}
+
+/*tabbellen*/
+.cart th {
+	border-bottom: 1px solid #E5E5E5;
+	text-align: center;
+	font-size: 14px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.cart tr td {
+	/*border: 1px solid #000000;*/
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.cart tr:last-child {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.cart th.productname {
+	text-align: left;
+}
+
+.cart td.productname {
+	text-align: left;
+}
+
+/*bild*/
+.cart img {
+	width: 150px;
+	height: auto;
+}
+
+/*pris*/
+.cart .price {
+	color: #E92334;
+}
+
+/*knappar*/
+.btn-cart {
+	width: 120px;
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+/*ta bort knapp*/
+.glyphicon-trash {
+	color: gray;
+}
+
+.glyphicon-trash:hover {
+	color: #E92334;
+	text-decoration: none;
+}
+
+/*KUNDVAGN STYLING END*/
+
+
+/*POFILE STYLING*/
+
+.btn-delete {
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+
+
+/*POFILE STYLING END*/
+
+
+
+/*KASSA STYLING*/
+
+
+.frakt {
+    width:15px;
+    float: left;
+}
+
+.frakt-label {
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+.kassa-paypal {
+    width: 150px;
+    height: auto;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    margin-top: -15px;
+}
+
+#betala {
+    margin-top: -60px;
+}
+
+
+#slutfor {
+    margin-top: -200px;
+}
+
+.btn-checkout {
+    padding-top: 7px;
+    width: 310px;
+    height: 50px;
+}
+
+span.price {
+    color: #E92334;
+}
+
+/*KASSA STYLING END*/
+
+
+/*TACK SIDA STYLING*/
+
+.glyphicon-ok {
+	color: #00CC7D;
+    margin-right: 10px;
+}
+
+#tack {
+    margin-bottom: 400px;
+}
+
+#tack h1 {
+    text-align: center;
+}
+
+#tack p {
+    text-align: center;
+}
+
+/*TACK SIDA STYLING END*/
+
+
+/*orderhistorik namn*/
+
+#orderhistorik h3 {
+    margin-bottom: 50px;
+}
+
+.cart tr td.namn-historik {
+    text-align: left;
+}
+
+.cart-historik {
+    margin-bottom: 50px;
+}
+
+
+
+.checkout-price {
+    color: #E92334;
+}
+
+
+
+
+
+
+
+/*RESPONSIVE CSS*/
+
+
+.navbar-default {
+    background-color: #1E3140;
+    border: none;
+    margin-bottom: 0;
+}
+
+/*stor skärm*/
+@media(max-width:1200px) {
+    .price {
+        width: 150px;
+    }  
+    
+        .tabort {
+        width: 80px;
+    }
+}
+
+/*medium skärm*/
+@media(max-width:995px) {
+    .product {    
+        height: 465px;   
+    }
+    
+
+    
+    .price {
+        width: 180px;
+    }  
+    .detailproduct {
+        height: 600px;
+    }
+}
+
+/*medium skärm*/
+@media(max-width:767px) {
+    .cart img {
+	width: 90px;
+	height: auto;
+}
+    .pris-historik {
+        font-size: 13px;
+    }
+    
+    .detailproduct {
+        height: 650px;
+    }
+    
+    .detailcrop {
+    width: 30%;
+	height: 300px;
+    }
+
+
+}
+/*mindre skärm*/
+@media(max-width:650px) {
+    .productname h4 {
+        font-size: 15px;
+    }
+    
+    .productname {
+        width: 200px;
+    }
+    
+    .cart img {
+        width: 60px;
+    }
+    
+    .cart th {
+        font-size: 10px;
+    }
+    
+    #loginform {
+        margin-bottom: 50px;
+        float: none;
+        clear: both;
+ }
+    
+    .detailcrop {
+        width: 100%;
+	    height: 400px;
+    }
+    
+    .detailinfo {
+        width: 100%;
+    }
+    
+    .detailcrop img {
+        margin-top: -100px;
+    }
+    
+    .detailproduct {
+        height: 900px;
+    }
+}
+
+/*läsplatta*/
+@media(max-width:500px) {
+    .price {
+        font-size: 13px;
+    }
+    
+    .antal {
+        font-size: 13px;
+        width: 10px;
+    }
+    
+    .glyphicon-trash {
+        font-size: 13px;
+    }
+    
+    .cart img {
+        width: 40px;
+    }
+
+    .detailproduct {
+        height: 1050px;
+    }
+}
+/*mobil*/
+@media(max-width:399px) {
+    .price {
+        font-size: 11px;
+    }
+    
+    #loginform {
+        margin-bottom: 50px;
+        float: none;
+        clear: none;
+ }
+    
+        .detailproduct {
+        height: 1100px;
+    }
+}
+/*mobil*/
+@media(max-width:360px) {
+    .cart img {
+        width: 20px;
+    }
+    
+        .detailproduct {
+        height: 1150px;
+    }
+    
+        .detailcrop {
+        width: 100%;
+	    height: 250px;
+    }
+    
+}
+
+
+.navbar-brand p {
+    font-family: 'Vibur', cursive;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+    margin-top: -17px;
+    margin-right: 5px;
+}
+
+.navbar-right {
+    margin-top: 15px;
+}
+
+#navbar-right li a {
+    color: #DDCDB3;
+    font-weight: 600;
+}
+
+#navbar-right li .kundvagnknapp a:last-child {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.kundvagnknapp {
+    margin-top: 3px;
+}
+
+
+
+
+/* --------------------------------------
+   Media Queries ERIK!
+   -------------------------------------- */
+
+
+
+/*footer*/
+footer{
+	background-color: #1E3140;	
+    height: 300px;
+    margin-top: 200px;
+/*    padding-top:50px;*/
+}
+
+/*footer*/
+footer ul{
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 90px 0px 10px 0px;
+}
+
+/*footer*/
+footer ul li a{
+	color: #DDCDB3; 
+
+}
+
+footer ul li a:hover{
+	color: #DDCDB3;
+    text-decoration: underline;
+
+}
+
+/*footer*/
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+/*footer*/
+footer p{
+	color: #DDCDB3; 
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+/*footer paypal*/
+#paypal {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  height: auto;
+  float: right;
+  position: relative; 
+  right: 10%;
+}
+
+/*footer paypal*/
+#paypal p{
+  margin: 0px;
+}
+
+/*footer paypal*/
+#paypal img{
+  width: 150px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+/* Telefon */
+@media (max-width: 480px) {
+    
+    #signupform {
+        margin-right: 100px;
+    }
+    /*footer*/
+footer ul li{
+  display: block;
+  text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+}
+    
+    footer ul {
+        margin-top: 40px;
+    }
+    
+    footer p {
+        margin-top: 40px;
+    }
+
+/*footer paypal*/
+#paypal {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  height: auto;
+  position: relative;
+  right: 27%;
+  margin-left: -75px;
+ 
+}
+
+/*footer paypal*/
+#paypal p{
+ display: none;
+}
+
+/**/
+#bottomnav li {
+  float: none;
+  display: block;
+  text-align: left;
+}
+    
+.glyphicon-shopping-cart {
+    margin-left: 17px;
+    margin-right: 25px;
+}
+
+.navbar-collapse {
+    border: none;
+}
+    
+.navbar-default .navbar-toggle {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+    
+    
+.navbar-header {
+    position: relative;
+    border: none;
+}
+
+.kundvagnknapp {
+    height: 35px;
+    margin-top: 5px;
+    padding: 0;
+    padding-top: 7px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.kundvagnknapp li {
+    margin-top: -5px;
+}
+
+.kundvagnknapp li a {
+    color: #ffffff;
+
+}
+
+#bottomnav {
+    height: 200px;
+    font-weight: 600;
+}
+.navbar-brand p {
+    margin-top: 4px;
+    font-size: 25px;
+}
+    
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+    margin-top: -13px;
+}
+    
+/**/
+#bottomnav{
+  width: 100%;
+  text-align: left; 
+}
+
+/**/
+#bottomnav li {
+  float: none;
+  display: block;
+}
+
+/**/
+#collapse2{
+background-color: #DDCDB3;
+    border-top: none;
+}
+
+/**/
+#kvagn-global{
+  display: inline;
+  position: relative;
+  right: 15px;
+  top: 2px;
+}
+
+/**/
+#kvagn-global a{
+  color: #ffffff;
+}
+    
+#kvagn-global a:hover{
+  text-decoration: none;
+}
+
+/**/
+#kvagn-lokal{
+  display: none;
+}
+
+
+}
+
+@media(min-width: 480px) and (max-width: 1000px) {
+
+ #navbar-right li a {
+margin-right: -15px;
+}
+
+.kundvagnknapp {
+    margin-left: 10px;
+}
+    
+.vit{
+  margin-left: 10px;
+}
+    
+.glyphicon-shopping-cart {
+margin-left: -15px;
+}
+}
+
+/* Läsplatta */
+@media (min-width: 481px) and (max-width: 768px) {
+    footer {
+    margin-top: 100px;
+}
+    
+    /*bottomnav*/
+#bottomnav{
+  width: 100%;
+  text-align: left; 
+
+}
+
+/*bottomnav*/
+#bottomnav li {
+  float: none;
+  display: block;
+
+}
+
+/*footer paypal*/
+#paypal {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  height: auto;
+  float: none;
+  position: relative;
+  left: 50%;
+  margin-left: -75px;
+}
+
+/*footer paypal*/
+#paypal p{
+ display: none;
+}
+
+.navbar-collapse {
+    border: none;
+}
+    
+.navbar-default .navbar-toggle {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+    
+    
+.navbar-header {
+    position: relative;
+    border: none;
+}
+
+.kundvagnknapp {
+    height: 35px;
+    margin-top: 5px;
+    padding: 0;
+    padding-top: 7px;
+}
+    
+.kundvagnknapp li {
+    margin-top: -5px;
+}
+
+.kundvagnknapp li a {
+    color: #ffffff;
+
+}
+
+#bottomnav {
+    height: 200px;
+    font-weight: 600;
+}
+.navbar-brand p {
+    margin-top: 4px;
+    font-size: 25px;
+}
+    
+.navbar-brand img {
+    width: 40px;
+    height: auto;
+    margin-top: -13px;
+}
+    
+/**/
+#bottomnav{
+  width: 100%;
+  text-align: left; 
+}
+
+/**/
+#bottomnav li {
+  float: none;
+  display: block;
+}
+
+/**/
+#collapse2{
+background-color: #DDCDB3;
+    border-top: none;
+}
+
+/**/
+#kvagn-global{
+  display: inline;
+  position: relative;
+  right: 15px;
+  top: 2px;
+}
+
+/**/
+#kvagn-global a{
+  color: #ffffff;
+}
+    
+#kvagn-global a:hover{
+  text-decoration: none;
+}
+
+/**/
+#kvagn-lokal{
+  display: none;
+}
+    
+#navbar-right {
+    width: 100%;
+}
+
+}
+
+/* stor datorskärm */
+@media (min-width: 768px) and (max-width: 2000px) {
+    
+
+#topnav{
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 50px;
+  right: 15px; 
+}
+
+/*footer*/
+footer ul li{
+  display: inline-block;
+  margin-right: 50px;
+}
+
+/**/
+#topnav{
+  position: absolute;
+  bottom: 60px;
+  right: 8%;
+}
+
+/**/
+#topnav li{
+  height: 50px;
+  position: relative;
+}
+
+/**/
+#kvagn-lokal{
+  position: relative;
+}
+
+/**/
+.kundvagnknapp{
+  top: 50%;
+  margin-bottom: -25px;
+}
+
+/**/
+#bottomnav{
+  width: 100%;
+  text-align: center; 
+  background-color: #DDCDB3;
+}
+    
+#bottomnav li {
+    float: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+    
+
+#bottomnav li a {
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+    
+    
+#bottomnav ul li:last-child {
+	margin-right: 0;
+}
+    
+.navbar-brand {
+    height: 80px;
+    padding: 0;
+}
+    
+#kvagn-global {
+    display: none;
+}
+    
+    
+}
+
+
+
+
+
+
+
+
+
